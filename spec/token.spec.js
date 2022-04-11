@@ -24,7 +24,7 @@ describe("createToken", () => {
 describe("createTokenWithExpiry", () => {
     it('creates an expiring JWT', () => {
         const expectedToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJuYXRoYW5rIiwiaWF0IjoxNjQzOTg3NDE0LCJleHAiOjE2NDM5OTEwMTR9.QCz4ZwNwkqRsFW5VPct76u7uBvdl6jzjx49uQbpT8JA';
-        
+
         const result = createTokenWithExpiry(payload, secret, '1h');
 
         expect(result).toEqual(expectedToken);
